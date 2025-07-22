@@ -1,8 +1,0 @@
-version: '3.8'
-services:
-  web:
-    build: ./app
-    ports:
-      - "85:5000"
-    volumes:
-      - ./app:/app

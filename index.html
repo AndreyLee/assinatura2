@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Assinatura de E-mail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Sistema de Assinatura</h1>
+    </header>
+
+    <main class="content-area">
+        <div class="signature-card">
+            <p class="card-description">
+                Preencha os campos abaixo para gerar sua assinatura de email institucional.
+            </p>
+            <div class="form-group">
+                <label for="nome"><b>Nome:</b></label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+            </div>
+            <div class="form-group">
+                <label for="setor"><b>Setor:</b></label>
+                <input type="text" id="setor" name="setor" placeholder="Seu setor">
+            </div>
+            <div class="form-group">
+                <label for="ramal"><b>Ramal:</b></label>
+                <input type="text" id="ramal" name="ramal" placeholder="Seu ramal">
+            </div>
+
+            <button id="generate-btn" class="btn btn-primary">Gerar Assinatura</button>
+
+            <div id="signature-preview-area" class="signature-preview">
+                <!-- A assinatura gerada aparecerá aqui -->
+            </div>
+
+            <button id="copy-btn" class="btn btn-secondary">Copiar para Área de Transferência</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
